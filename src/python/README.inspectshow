@@ -37,6 +37,59 @@ Usage:
 
 
 ###########################################
+#  inspectshow  template
+##########################################
+
+<module>
+ |-- [SUBPACKAGES]
+ |-- [SUBMODULES ]
+ |-- [CLASS   <mro>]
+ |--   :::: - Classes and Method Resolution Order
+ |-- [ FUNCTION  ]
+ |--   ::::  - Function including "lambda" anonymous functions
+ |-- [ROUTINE  ] - user-defined or built-in function or method
+ |-- [ METHOD ]
+ |--   :::::   - bound method
+ |-- [ GENERATOR ]
+ |--   ::::   - object is a generator with "yield" expressions
+ |-- [ GENERATOR FUNCTION ]
+ |--   ::::     - object is a generator function
+ |-- [ TRACEBACK ]
+ |--   ::::  - Traceback object
+ |-- [ FRAME ]
+ |--   :::: - Frame Object
+ |-- [ CODE ]
+ |--   :::: - Code Object
+ |-- [ BUILTIN ]
+ |--   :::: - built-in function or bound built-in method
+ |-- [ ABSTRACT ]
+ |--   :::: - object is abstract base class
+     |-- MutableMapping
+ |-- [ METHOD DESCRIPTOR ]
+ |--   ::::  - Object has __get__ attribute but NOT __set__ attribute
+ |-- [ DATA DESCRIPTOR ]
+ |--   ::::  - Object has __get__, __set__, __delete__ attributes
+ |-- [ GETSET DESCRIPTOR ]
+ |-- [ MEMBER DESCRIPTOR ]
+ |-- [ VARIABLES ]
+     |-- [ GLOBALS ]
+         |-- [ bool ]
+         |-- [ int ]
+         |-- [ float ]
+         |-- [ complex ]
+     |-- [ IMMUTABLE SEQUENCES ]
+         |-- [ str ]
+         |-- [ slice ]
+         |-- [ tuple ]
+         |-- [ frozenset ]
+     |-- [ MUTABLE SEQUENCES ]
+         |-- [ list ]
+         |-- [ bytearray ]
+         |-- [ set ]
+     |-- [ MAPPING ]
+         |-- [ dict ]
+
+###########################################
 #     inspectshow of 'os' module
 ##########################################
 
